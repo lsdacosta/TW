@@ -1,28 +1,23 @@
+javascript:
 //mass scavenging by Sophie "Shinko to Kuma"
-javascript: serverTimeTemp =
-  $("#serverDate")[0].innerText + " " + $("#serverTime")[0].innerText;
-serverTime = serverTimeTemp.match(
-  /^([0][1-9]|[12][0-9]|3[01])[\/\-]([0][1-9]|1[012])[\/\-](\d{4})( (0?[0-9]|[1][0-9]|[2][0-3])[:]([0-5][0-9])([:]([0-5][0-9]))?)?$/
-);
-serverDate = Date.parse(
-  serverTime[3] + "/" + serverTime[2] + "/" + serverTime[1] + serverTime[4]
-);
-var is_mobile =
-  !!navigator.userAgent.match(/iphone|android|blackberry/gi) || false;
+serverTimeTemp = $("#serverDate")[0].innerText + " " + $("#serverTime")[0].innerText;
+serverTime = serverTimeTemp.match(/^([0][1-9]|[12][0-9]|3[01])[\/\-]([0][1-9]|1[012])[\/\-](\d{4})( (0?[0-9]|[1][0-9]|[2][0-3])[:]([0-5][0-9])([:]([0-5][0-9]))?)?$/);
+serverDate = Date.parse(serverTime[3] + "/" + serverTime[2] + "/" + serverTime[1] + serverTime[4]);
+var is_mobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
 var scavengeInfo;
-var tempElementSelection = "";
+var tempElementSelection="";
 
 //relocate to mass scavenging page
-if (window.location.href.indexOf("screen=place&mode=scavenge_mass") < 0) {
-  //relocate
-  window.location.assign(game_data.link_base_pure + "place&mode=scavenge_mass");
+if (window.location.href.indexOf('screen=place&mode=scavenge_mass') < 0) {
+    //relocate
+    window.location.assign(game_data.link_base_pure + "place&mode=scavenge_mass");
 }
 
 $("#massScavengeSophie").remove();
 //set global variables
 
-if (typeof version == "undefined") {
-  version = "new";
+if (typeof version == 'undefined') {
+    version = "new";
 }
 
 //set translations
