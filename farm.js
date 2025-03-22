@@ -374,32 +374,32 @@ window.FarmGod.Translation = (function () {
       missingFeatures:
         "O script requer uma conta premium e assistente de saque!",
       options: {
-        title: "Opções do FarmGod",
+        title: "Opções",
         warning:
           "<b>Aviso:</b><br>- Certifique-se de que A está definido como sua microfazenda padrão e B como uma microfazenda maior<br>- Certifique-se de que os filtros de fazenda estão configurados corretamente antes de usar o script",
         filterImage:
           "https://higamy.github.io/TW/Scripts/Assets/farmGodFilters.png",
-        group: "Enviar farmes do grupo:",
+        group: "Enviar ataques do grupo:",
         distance: "Máximo de campos:",
         time: "Quanto tempo em minutos deve haver entre os ataques:",
         losses: "Farmar aldeias com perdas parciais:",
         maxloot: "Enviar B se o último saque foi cheio:",
         newbarbs: "Adicionar novas aldeias bárbaras para farm:",
-        button: "Planejar farme",
+        button: "Planejar",
       },
       table: {
         noFarmsPlanned:
-          "Nenhuma fazenda pode ser enviada com as configurações especificadas.",
+          "Nenhum farm pode ser enviado com as configurações especificadas.",
         origin: "Origem",
         target: "Alvo",
         fields: "campos",
-        farm: "Fazenda",
+        farm: "Farm",
         goTo: "Ir para",
       },
       messages: {
         villageChanged: "Aldeia alterada com sucesso!",
-        villageError: "Todas as fazendas para a aldeia atual foram enviadas!",
-        sendError: "Erro: fazenda não enviada!",
+        villageError: "Todas os ataques para a aldeia atual foram enviados!",
+        sendError: "Erro: ataque não enviado!",
       },
     },
     int: {
