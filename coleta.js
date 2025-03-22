@@ -1,3 +1,4 @@
+//mass scavenging by Sophie "Shinko to Kuma"
 javascript: serverTimeTemp =
   $("#serverDate")[0].innerText + " " + $("#serverTime")[0].innerText;
 serverTime = serverTimeTemp.match(
