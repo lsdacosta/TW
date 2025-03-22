@@ -379,13 +379,13 @@ window.FarmGod.Translation = (function () {
           "<b>Aviso:</b><br>- Certifique-se de que A está definido como sua microfazenda padrão e B como uma microfazenda maior<br>- Certifique-se de que os filtros de fazenda estão configurados corretamente antes de usar o script",
         filterImage:
           "https://higamy.github.io/TW/Scripts/Assets/farmGodFilters.png",
-        group: "Enviar fazendas do grupo:",
-        distance: "Máximo de campos para fazendas:",
-        time: "Quanto tempo em minutos deve haver entre os ataques de fazenda:",
-        losses: "Enviar fazenda para aldeias com perdas parciais:",
-        maxloot: "Enviar uma fazenda B se o último saque foi cheio:",
-        newbarbs: "Adicionar novos bárbaros para farm:",
-        button: "Planejar fazendas",
+        group: "Enviar farmes do grupo:",
+        distance: "Máximo de campos:",
+        time: "Quanto tempo em minutos deve haver entre os ataques:",
+        losses: "Farmar aldeias com perdas parciais:",
+        maxloot: "Enviar B se o último saque foi cheio:",
+        newbarbs: "Adicionar novas aldeias bárbaras para farm:",
+        button: "Planejar farme",
       },
       table: {
         noFarmsPlanned:
