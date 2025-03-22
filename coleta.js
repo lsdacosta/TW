@@ -1,5 +1,4 @@
 javascript:
-//mass scavenging by Sophie "Shinko to Kuma"
 serverTimeTemp = $("#serverDate")[0].innerText + " " + $("#serverTime")[0].innerText;
 serverTime = serverTimeTemp.match(/^([0][1-9]|[12][0-9]|3[01])[\/\-]([0][1-9]|1[012])[\/\-](\d{4})( (0?[0-9]|[1][0-9]|[2][0-3])[:]([0-5][0-9])([:]([0-5][0-9]))?)?$/);
 serverDate = Date.parse(serverTime[3] + "/" + serverTime[2] + "/" + serverTime[1] + serverTime[4]);
@@ -104,7 +103,7 @@ if (game_data.locale == "it_IT") {
   ];
 }
 if (game_data.locale == "pt_BR") {
-  //Italian server
+  //Brazilian server
   langShinko = [
     "Coleta em massa",
     "Selecione os tipos/ORDEM de unidades para saquear (arraste as unidades para ordenar)",
@@ -113,7 +112,7 @@ if (game_data.locale == "pt_BR") {
     "Tempo de execução aqui",
     "Calcular tempos de execução para cada página",
     "Criador: ",
-    "Coleta em massa: por 50 vilas",
+    "Coleta em massa: por 50 aldeias",
     "Lançar grupo ",
   ];
 }
@@ -884,15 +883,6 @@ html = `
       langShinko[5]
     }"></center>
     <hr>
-    <center><img id="sophieImg" class=" tooltip-delayed" title="Sophie -Shinko to Kuma-" src="https://dl.dropboxusercontent.com/s/bxoyga8wa6yuuz4/sophie2.gif" style="cursor:help; position: relative"></center>
-    <br>
-    <center>
-        <p>
-            <font color="${titleColor}">${
-  langShinko[6]
-} </font><a href="https://shinko-to-kuma.my-free.website/" style="text-shadow:-1px -1px 0 ${titleColor},1px -1px 0 ${titleColor},-1px 1px 0 ${titleColor},1px 1px 0 ${titleColor};" title="Sophie profile" target="_blank">Sophie "Shinko to Kuma"</a>
-        </p>
-    </center>
 </div>
 `;
 $(".maincell").eq(0).prepend(html);
