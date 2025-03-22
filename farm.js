@@ -467,7 +467,7 @@ window.FarmGod.Main = (function (Library, Translation) {
               let optionTime = parseFloat($(".optionTime").val());
               let optionLosses = $(".optionLosses").prop("checked");
               let optionMaxloot = $(".optionMaxloot").prop("checked");
-              let optionNewbarbs = $(".optionNewbarbs").prop("checked");
+              let optionNewbarbs = $(".optionNewbarbs").prop("checked") || false;
 
               localStorage.setItem(
                 "farmGod_options",
