@@ -392,8 +392,8 @@ window.FarmGod.Translation = (function () {
           "Nenhum farm pode ser enviado com as configurações especificadas.",
         origin: "Origem",
         target: "Alvo",
-        fields: "campos",
-        farm: "Farm",
+        fields: "Campos",
+        farm: "Modelo",
         goTo: "Ir para",
       },
       messages: {
